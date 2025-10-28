@@ -57,3 +57,5 @@ Google Maps (Iframe)
 Tailwind CSS
 
 Axios
+
+The project is Live at : https://weather-now1903.netlify.app/
