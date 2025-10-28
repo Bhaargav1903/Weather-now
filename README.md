@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+WeatherNow – React Weather App
+WeatherNow is a fast and interactive React app that allows outdoor enthusiasts to check the current weather for any city and their current location. It uses Open-Meteo API for weather and geocoding data, Google Maps for visualization, and Tailwind CSS for a modern UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Instant Weather: Check current weather for any city worldwide.
 
-## Available Scripts
+Current Location: Get weather for your device’s location with one click (uses browser geolocation).
 
-In the project directory, you can run:
+Autocomplete City Search: City name suggestions as you type.
 
-### `npm start`
+Google Maps Background: Visualizes selected/city location as a map background.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Modern UI: Clean design powered by Tailwind CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Demo
+<img width="1893" height="943" alt="image" src="https://github.com/user-attachments/assets/facc5c27-fbc1-4a23-8800-99989f945bf5" />
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Getting Started
+Clone the repository:
 
-### `npm run build`
+bash
+git clone https://github.com/yourusername/weathernow.git
+cd weathernow
+Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+npm install
+Set up Tailwind CSS:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow Tailwind CSS Installation Guide for React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure your index.css or global styles include Tailwind’s base config.
 
-### `npm run eject`
+Run the app:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+npm start
+Usage Notes
+The app fetches weather from Open-Meteo API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+City autocomplete and geocoding work with Open-Meteo’s free endpoints.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Google Maps is shown as a background via an iframe — no API key needed for basic visualization.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Uses browser’s location permissions for current location weather.
 
-## Learn More
+All styles use Tailwind utility classes for fast, responsive design.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Technologies
+React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open-Meteo API
 
-### Code Splitting
+Google Maps (Iframe)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Tailwind CSS
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Axios
